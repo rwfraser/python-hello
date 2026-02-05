@@ -4,7 +4,8 @@ from pyramid.response import Response
 import os
 
 def hello_world(request):
-    name = os.environ.get('NAME')
+    # name = os.environ.get('NAME')
+    name = "Hello, World!"
     if name == None or len(name) == 0:
         name = "world"
     message = "Hello, " + name + "!\n"
